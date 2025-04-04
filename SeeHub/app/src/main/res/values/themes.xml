@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SeeHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.SeeHub" parent="Base.Theme.SeeHub" />
+
+    <style name="TextItalic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="RoundedDialog" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">#94000000</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

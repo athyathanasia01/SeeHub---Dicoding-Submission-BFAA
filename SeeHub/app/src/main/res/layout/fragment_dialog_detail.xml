@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/transparant"
+    android:backgroundTintMode="src_atop"
+    android:background="@drawable/bg_dialog"
+    tools:context=".ui.DialogDetailFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:text="@string/name_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:text="@string/username_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_initi"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/id_initi"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nodeId_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_nodeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/nodeId_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_init"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/link"
+                android:textStyle="italic"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:text="@string/email_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/company_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_init"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/location_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twitter_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/twitter_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pub_repo_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_pubRepo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/pub_repo_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pub_gist_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_pub_gist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/pub_gist_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/created_init"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/created_init"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_init"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd= "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semicolon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:text="@string/update_init"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/bio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textStyle="bold"
+                android:textColor="@color/colorOnPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bio_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/bio_init"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:textColor="@color/colorOnPrimary"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginVertical="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/close"
+        android:backgroundTint="@color/colorPrimaryVariant"
+        android:shadowColor="@color/colorPrimary"/>
+
+</LinearLayout>
