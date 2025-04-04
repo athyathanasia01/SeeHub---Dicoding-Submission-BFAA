@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = UserListAdapter()
         adapter.submitList(userList)
         binding.rvUser.adapter = adapter
+        binding.rvUser.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
 
         adapter.setOnItemClickCallback(object : UserListAdapter.OnItemClickCallback {
             override fun onItemClicked(data: UserListResponseItem) {
