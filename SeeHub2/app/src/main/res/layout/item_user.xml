@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_user"
+    android:layout_gravity="center_vertical"
+    android:layout_marginVertical="3dp"
+    app:cardCornerRadius="100dp"
+    android:backgroundTint="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:src="@tools:sample/avatars"/>
+        
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/img_profile_user"
+            app:layout_constraintStart_toEndOf="@id/img_profile_user"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/username"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_username"
+            app:layout_constraintBottom_toBottomOf="@id/img_profile_user"
+            app:layout_constraintEnd_toStartOf="@id/img_heart"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginBottom="10dp"
+            android:text="@string/id"
+            android:textColor="@color/colorOnPrimary"
+            android:maxEms="8"
+            android:textStyle="italic"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:src="@drawable/heart_red"
+            android:src="@drawable/heart_grey"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

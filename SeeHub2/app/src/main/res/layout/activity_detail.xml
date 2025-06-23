@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:menu="@menu/main_menu"
+            app:title="@string/detail_app"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorOnPrimary"/>
+
+        <ImageView
+            android:id="@+id/btn_detail_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/information"
+            android:layout_margin="8dp"
+            android:layout_gravity="end"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_avatar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follow"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/grey"
+            app:tabSelectedTextColor="@color/colorOnPrimary"
+            android:background="@color/colorPrimaryVariant"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:max="100"
+        android:progress="50"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
